@@ -2,25 +2,24 @@
 
 The website AI for Mathematics (AI4Math) that is under construction.
 
-[Optimization: Stochastic Gradient Descent](optimization-1/)
+- [Optimization: Stochastic Gradient Descent](optimization-1/)
+
+
+# AI for Mathematics
+
+The field of **"AI for Mathematics" (AI4Math)** has evolved rapidly from traditional symbolic logic to modern neuro-symbolic approaches. While early artificial intelligence focused on rigid, rule-based systems (GOFAI), the current wave of research integrates Deep Learning (DL) and Large Language Models (LLMs) with formal verification systems like *Lean*, *Coq*, and *Isabelle*. 
+
+The core challenge in this domain is the "formal-informal gap": bridging the intuitive, flexible reasoning of human mathematics (informal) with the rigorous, machine-checkable guarantees of formal proof assistants.
+
+The literature provided outlines a clear trajectory: moving from Reinforcement Learning (RL) applied to proof search, to Generative AI that conjectures theorems and proofs, and finally to "human-in-the-loop" systems that aid mathematical discovery.\\
 
 
 
-## Introduction
-The field of **"AI for Mathematics" (AI4Math)** has evolved rapidly from traditional symbolic logic to modern neuro-symbolic approaches. While early artificial intelligence focused on rigid, rule-based systems (GOFAI), the current wave of research integrates Deep Learning (DL) and Large Language Models (LLMs) with formal verification systems like **Lean**, **Coq**, and **Isabelle**. 
 
-The core challenge in this domain is the **"formal-informal gap"**: bridging the intuitive, flexible reasoning of human mathematics (informal) with the rigorous, machine-checkable guarantees of formal proof assistants.
-
-The literature provided outlines a clear trajectory: moving from Reinforcement Learning (RL) applied to proof search, to Generative AI that conjectures theorems and proofs, and finally to "Human-in-the-Loop" systems that aid mathematical discovery.
-
-
-
----
-
-## 1. Automated Theorem Proving (ATP)
+## Automated Theorem Proving (ATP)
 The central pillar of AI4Math is Automated Theorem Proving—using machines to generate valid proofs within a formal system.
 
-### 1.1 The Shift from RL to Generative Models
+### From RL to Generative Models
 Early neural approaches attempted to guide search algorithms using deep networks. 
 * **Holophrasm (2016) and DeepMath (2016):** Pioneering works that used neural networks to select premises or guide proof search in higher-order logic.
 
@@ -33,11 +32,11 @@ However, the advent of Transformers shifted the paradigm towards generative lang
 * **Thor (2022) and Baldur (2023):** Integrated LLMs with automated provers (hammers), allowing the model to wield external tools to discharge sub-goals.
 * **DeepSeek-Prover (2024):** Pushed this further by leveraging large-scale synthetic data to train LLMs specifically for formal proving.
 
-### 1.2 Retrieval-Augmented Proving
+### Retrieval-Augmented Proving
 A major limitation of pure LLMs is their inability to access the vast library of existing mathematical lemmas during inference. 
 * **LeanDojo (2023):** Addressed this by introducing retrieval-augmented generation to theorem proving, allowing the model to dynamically retrieve relevant premises from the math library before generating a proof step.
 
-### 1.3 The Geometry Breakthrough: A Comparative Summary
+### Advances in Geometry Problems
 Geometry has proven to be a specialized domain where neuro-symbolic AI excels. Recent approaches differ significantly in how they balance neural intuition with symbolic rigor:
 
 * **AlphaGeometry (Nature 2024):** This system combines a neural language model with a symbolic deduction engine. The LLM is responsible for "constructive moves" (adding auxiliary lines or points), while the symbolic engine deduces new statements from these constructions. It solves Olympiad-level problems without human demonstrations.
@@ -52,9 +51,8 @@ Geometry has proven to be a specialized domain where neuro-symbolic AI excels. R
 
 
 
----
 
-## 2. Autoformalization and the Data Bottleneck
+## Autoformalization and the Data Bottleneck
 A critical bottleneck in AI4Math is the scarcity of formalized data—most mathematical knowledge exists as informal LaTeX or textbook prose, which computers cannot verify. **Autoformalization** is the task of automatically translating natural language math into formal code (e.g., Lean).
 
 * **Wu et al. (2022):** Demonstrated that LLMs could be few-shot prompted to perform this translation.
@@ -63,29 +61,27 @@ A critical bottleneck in AI4Math is the scarcity of formalized data—most mathe
 
 
 
----
-
-## 3. Synthetic Discovery and Intuition
+## Synthetic Discovery and Intuition
 Beyond verifying known truths, AI is increasingly used to discover new mathematics.
 
 * **Synthetic Theorem Generation:** Models are trained not just to prove, but to propose interesting conjectures. **MetaGen (2020)** and **MUSTARD (2024)** focused on learning to generate theorems, creating a curriculum of synthetic data to train stronger provers.
 * **AI for Intuition:** The **Nature 2021 paper by Davies et al.** showcased how AI could guide human intuition, helping mathematicians discover patterns in knot theory and representation theory that were previously unnoticed.
 * **FunSearch (Nature 2024):** Used LLMs to search for functions in code space, discovering new constructions in combinatorics (e.g., the cap set problem) that surpassed best-known human results.
 
----
 
-## 4. Benchmarks and Evaluation
+## Benchmarks and Evaluation
 To measure progress, the field has coalesced around several key benchmarks:
 
 * **MiniF2F (2022):** A cross-system benchmark of Olympiad-level problems, becoming the standard for comparing neural provers.
 * **FIMO (2023):** A challenge dataset specifically for formal automated theorem proving, pushing the difficulty closer to International Mathematical Olympiad standards.
 
----
 
-## Conclusion
-The literature reflects a transition from "AI as a search heuristic" to "AI as a generative partner." The integration of Large Language Models with formal verification (as seen in **LeanDojo** and **DeepSeek-Prover**) and the specific success in geometry (**AlphaGeometry**) suggests that the future of AI4Math lies in **neuro-symbolic systems**: models that possess the linguistic fluency to conjecture and autoformalize, paired with the rigorous logic of proof assistants to verify and guide their reasoning.
 
----
+## Summary
+The literature is transiting from "AI as a search heuristic" to "AI as a generative partner." The integration of Large Language Models with formal verification (as seen in *LeanDojo* and *DeepSeek-Prover*) and the specific success in geometry (*AlphaGeometry*) suggests that the future of AI4Math lies in *neuro-symbolic systems*: models that possess the linguistic fluency to conjecture and autoformalize, paired with the rigorous logic of proof assistants to verify and guide their reasoning.\\
+\\
+
+----
 
 ## References
 
