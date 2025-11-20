@@ -1,3 +1,7 @@
+---
+layout: page
+---
+
 
 ## AI for Mathematics
 
