@@ -1,18 +1,17 @@
 
+## AI for Mathematics
 
 The website AI for Mathematics (AI4Math) that is under construction.
 
-- [Optimization: Stochastic Gradient Descent](optimization-1/)
+[Optimization: Stochastic Gradient Descent](optimization-1/)
 
 
-# AI for Mathematics
 
 The field of **"AI for Mathematics" (AI4Math)** has evolved rapidly from traditional symbolic logic to modern neuro-symbolic approaches. While early artificial intelligence focused on rigid, rule-based systems (GOFAI), the current wave of research integrates Deep Learning (DL) and Large Language Models (LLMs) with formal verification systems like *Lean*, *Coq*, and *Isabelle*. 
 
 The core challenge in this domain is the "formal-informal gap": bridging the intuitive, flexible reasoning of human mathematics (informal) with the rigorous, machine-checkable guarantees of formal proof assistants.
 
-The literature provided outlines a clear trajectory: moving from Reinforcement Learning (RL) applied to proof search, to Generative AI that conjectures theorems and proofs, and finally to "human-in-the-loop" systems that aid mathematical discovery.\\
-
+The literature provided outlines a clear trajectory: moving from Reinforcement Learning (RL) applied to proof search, to Generative AI that conjectures theorems and proofs, and finally to "human-in-the-loop" systems that aid mathematical discovery.
 
 
 
@@ -78,8 +77,7 @@ To measure progress, the field has coalesced around several key benchmarks:
 
 
 ## Summary
-The literature is transiting from "AI as a search heuristic" to "AI as a generative partner." The integration of Large Language Models with formal verification (as seen in *LeanDojo* and *DeepSeek-Prover*) and the specific success in geometry (*AlphaGeometry*) suggests that the future of AI4Math lies in *neuro-symbolic systems*: models that possess the linguistic fluency to conjecture and autoformalize, paired with the rigorous logic of proof assistants to verify and guide their reasoning.\\
-\\
+The literature is transiting from "AI as a search heuristic" to "AI as a generative partner." The integration of Large Language Models with formal verification (as seen in *LeanDojo* and *DeepSeek-Prover*) and the specific success in geometry (*AlphaGeometry*) suggests that the future of AI4Math lies in *neuro-symbolic systems*: models that possess the linguistic fluency to conjecture and autoformalize, paired with the rigorous logic of proof assistants to verify and guide their reasoning.
 
 ----
 
