@@ -4,9 +4,8 @@ email:
 description: "AI for Mathematics (AI4Math)"
 baseurl: ""
 url: "https://ai4math.github.io"
-courseurl: "http://cs231n.stanford.edu/"
-twitter_username: cs231n
-github_username: cs231n
+twitter_username: ai4math
+github_username: ai4math
 
 # Build settings
 markdown: kramdown
